@@ -536,6 +536,22 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
         .duration(600)
 
+    gtr.assembler('eye_of_wooden')
+        .itemInputs(
+            '16x gtceu:electric_blast_furnace',
+            '16x minecraft:bricks',
+            '16x gtceu:firebricks',
+            '16x minecraft:bookshelf',
+            '16x gtceu:lv_voltage_coil',
+            '16x #gtceu:circuits/mv',
+            '64x gtceu:lv_emitter',
+            '64x gtceu:lv_sensor',
+            '64x gtceu:lv_robot_arm')
+        .inputFluids('gtceu:tin 4608')
+        .itemOutputs('gtceu:eye_of_wooden')
+        .EUt(GTValues.VA[GTValues.LV])
+        .duration(600)
+
     event.shaped('gtceu:extractor_core',[
       'XOX',
       'CAC',
